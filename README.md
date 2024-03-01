@@ -11,8 +11,13 @@ poetry install
 In case you don't want to use Poetry, you can install the dependencies in your environment manually using `pip`:
 
 ```bash
-poetry export -f requirements.txt --output requirements.txt
 pip install -r requirements.txt
+```
+
+Note to self: When adding new dependencies, update the `requirements.txt` file by running:
+
+```bash
+poetry export -f requirements.txt --output requirements.txt
 ```
 
 ## `.env` file
